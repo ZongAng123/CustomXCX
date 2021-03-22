@@ -1,0 +1,24 @@
+<!--index.wxml-->
+      <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}" wx:key="*this">
+          <swiper-item>
+            <!-- <view class="swiper-item {{item}}"></view> -->
+            <!-- 本地加载网路图片 -->
+            <image src="{{item}}" class="slide-image" with="355" height="150" />
+          </swiper-item>
+        </block>
+      </swiper>
+<view class="items-list">
+  <view class="pro-item"  wx:for="{{prolist}}">
+   <image class="pro-logo" src="{{item.logo}}"></image>
+    <view class="pro-body">
+      <view class="pro-title">{{item.title}}</view>
+      <text class="pro-desc">{{item.desc}}</text>
+      <view class="pro-footer">
+        <image class="btn-detail" src="/pages/images/hhhh.png"></image>
+        <image class="btn-ask" src="/pages/images/hhhh.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

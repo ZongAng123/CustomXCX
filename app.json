@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/join/join",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#2e5e86", 
+    "navigationBarTitleText": "江阴巡防",
+    "navigationBarTextStyle":"black"
+  },
+ 
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+   "selectedColor": "#2e5e86",
+   "list": [{
+     "pagePath": "pages/index/index",
+     "text": "Home",
+     "iconPath": "pages/images/home.png",
+     "selectedIconPath": "pages/images/home.png"
+   },{
+     "pagePath": "pages/join/join",
+     "text": "加入",
+     "iconPath": "pages/images/fenlei.png",
+     "selectedIconPath": "pages/images/fenlei.png"
+   }]
+  }
+}
